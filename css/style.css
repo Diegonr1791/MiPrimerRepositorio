@@ -8,82 +8,32 @@
 }
 
 body{
-    /*background-color: rgb(249, 248, 250);*/
+    background-color: rgb(127, 11, 243);
     
     
 }
-
-#contenedor-principal{
-    width: 960px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+/*CONTENEDOR*/
+.container-fluid{
+    background-color: blue;
+    margin: 10px;
 }
-header{
-    height: 150px;
-    padding: 10px;
-    padding-left: 0px;
-}
-nav{
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#62017a+46,ad1283+100 */
-    background: #45484d; /* Old browsers */
-    background: -moz-linear-gradient(top,  #45484d 47%, #000000 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #45484d 47%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #45484d 47%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
-    height: 50px;
-    
-}
-
-
-.contenedor-servicios{
-    width: 700px;
-    height: 500px;
-    float: left;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-aside{
-    width: 250px;
-    height: 500px;
-    margin-top: 10px;
-    float: right;
-}
-footer{
-    width: 100%;
-    float: left;
-    clear: both;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+47,000000+100&0.97+63,0.83+100 */
-    background: -moz-linear-gradient(top,  rgba(69,72,77,0.97) 47%, rgba(48,50,54,0.97) 63%, rgba(0,0,0,0.83) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(69,72,77,0.97) 47%,rgba(48,50,54,0.97) 63%,rgba(0,0,0,0.83) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(69,72,77,0.97) 47%,rgba(48,50,54,0.97) 63%,rgba(0,0,0,0.83) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f745484d', endColorstr='#d4000000',GradientType=0 ); /* IE6-9 */
-
-
-
-
-}
-
-p{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 15px;
-    text-align: center;
-}
-
-/*---------------------------*/
+/*-------------------------*/
 /*HEADER*/
-.titulo{
-    width: 30%;
+header{
+margin-top: 0px;
+    
+}
+.cont-header{
+    margin:0px;
+}
+/*LOGO*/
+#div-logo{
+    width: 100%;
     height: 100%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     text-align: center;
     line-height: 150px;
-    float: left;
     border-radius: 0px 10px 0px 0px;
-    box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
     
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#62017a+46,ad1283+100 */
     background: #62017a; /* Old browsers */
@@ -91,95 +41,128 @@ p{
     background: -webkit-linear-gradient(top,  #62017a 46%,#ad1283 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  #62017a 46%,#ad1283 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62017a', endColorstr='#ad1283',GradientType=0 ); /* IE6-9 */
-
 }
-.titulo h1{
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   font-size: 150px;
- 
-   
-}
-
-.subtitulo{
-   padding-right: 10px;
-   
-  
-}
-.subtitulo h2{
-    text-align: right;
-    line-height: 150px;
-    font-size: 50px;
+#div-logo h1{
+    
+    font-size: 8vw;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-shadow: 1px 2px #999;
+    color: black;
+    text-shadow: 1px 2px #919191;
+}
 
+/*TITULO*/
+#div-titulo{
+    background-color: lightcoral;
+    height: 100%;
+    
 }
-/*Menu navegacion*/
-.menu ul{
-    list-style: none;
 
+
+#div-titulo h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5vw;
+    text-align: right;
+    padding-right: 5px;
 }
-.menu li{
-    float: left;
+/*------------------------------*/
+
+/*MENU NAVEGACION*/
+.contenedor-menu{
+    background-color: lawngreen;
+    margin: 0px;
+    padding: 0px;
 }
-.menu a{
+.contenedor-menu a{
     text-decoration: none;
     color: white;
-    display: block;
     padding: 12px 26px;
     font-family: 'Do Hyeon', sans-serif;
     font-size: 20px;
     text-align: center;
-    
 }
-
-.menu a:hover{
+.contenedor-menu a:hover{
     color: blueviolet;
     background: rgba(0,0,0,0.2);
 }
+.contenedor-menu .navbar{
+ 
+}
+.contenedor-menu .nav{
+    text-align: right;   
+}
+.contenedor-menu .nav-item{
+    text-align: center;
+}
+
+nav{
+    
+    /*
+    background: #45484d; 
+    background: -moz-linear-gradient(top,  #45484d 47%, #000000 100%); 
+    background: -webkit-linear-gradient(top,  #45484d 47%,#000000 100%);
+    background: linear-gradient(to bottom,  #45484d 47%,#000000 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); 
+    height: 50px;
+     */  
+}
+/*------------------------------*/
+/*SECCION PRINCIPAL*/
+.seccion-principal{
+    background-color: lightseagreen;
+}
+.seccion-principal img{
+    width: 100%;
+}
+
+/*-------------------------------*/
 
 /*ASIDE*/
-.info-publicidad{
+aside{
+    
+    height: auto;
+
+    background-color: lightgreen;
+}
+
+/*-------------------------------*/
+
+/*FOOTER*/
+footer{
+    /*
+    width: 100%;
+    float: left;
+    clear: both;
+    background: -moz-linear-gradient(top,  rgba(69,72,77,0.97) 47%, rgba(48,50,54,0.97) 63%, rgba(0,0,0,0.83) 100%); 
+    background: -webkit-linear-gradient(top,  rgba(69,72,77,0.97) 47%,rgba(48,50,54,0.97) 63%,rgba(0,0,0,0.83) 100%); 
+    background: linear-gradient(to bottom,  rgba(69,72,77,0.97) 47%,rgba(48,50,54,0.97) 63%,rgba(0,0,0,0.83) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f745484d', endColorstr='#d4000000',GradientType=0 ); 
+    */
     
 }
-/*FOOTER*/
-footer section{
-    width: 50%;
-    height: 100%;
-    float: left;
+footer #foot-acercade{
+    background-color: maroon;
+}
+footer #foot-redes{
+    background-color: midnightblue;
+}
+/*-------------------------------*/
+
+
+
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+
+
+
+
 
     
   
-}
-footer #foot-descripcion{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color:#919191;
-    text-align: justify;
-    line-height: 20px;
-    float: left;
-    
-}
-footer #foot-redes {
-    height: 100%;
-    
-    background-color: chocolate;
-    
-}
-footer #foot-redes div{
-    background-color: royalblue;
-    float: left;
-    width: 20%;
-    height: 20%;
-    text-align: center;
 
-    margin-left: 2px;
-}
 
-/*Imagen del contenido-servicios*/
- #img{
-    background-size: 100% 100%;
-    background-repeat:no-repeat;
-    background:url(../img/fondo-header.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-}
+
