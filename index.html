@@ -1,68 +1,185 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ryuk</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div id="contenedor-principal">
-      <header>
-        <div class="titulo">
-          <h1>Ryuk</h1>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>RYUK, Desarrollos web</title>
+</head>
+
+<body>
+  <div class=" cont-header container-fluid">
+    <header>
+      <div class="row">
+        <div class="col-12-xs col-sm-4 col-md-4 col-lg-4 col-xl-4">
+          <nav class=" menu navbar navbar-expand-sm navbar-light fixed-top">
+            <div id="logo">
+              <a href="index.html">RYUK</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-expanded="false" aria-label="Toggle navigation" aria-controls="navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="Quienes-Somos.html" class="nav-link">Quienes Somos</a></li>
+                <li class="nav-item"><a href="Servicios.html" class="nav-link">Servicios</a></li>
+                <li class="nav-item"><a href="Porfolio.html" class="nav-link">Porfolio</a></li>
+                <li class="nav-item"><a href="#form-contacto" class="nav-link">Contacto</a></li>
+              </ul>
+            </div>
+          </nav>
         </div>
-        <div class="subtitulo">
-          <h2>Desarrollos Web Integrales</h2>
-        </div>
-      </header>
-      <nav class="menu">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="Servicios.html">Servicios</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Acerca de</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </nav>
-      <section class="contenedor-servicios">
-        <div id="img">h</div>
-      </section>
-      <aside class="info-publicidad">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
-          labore repellat consequatur nam? Temporibus itaque incidunt nostrum
-          officiis, nobis iusto cumque similique in tempora voluptatum corrupti
-          animi sequi fugit facere? Lorem ipsum dolor sit, amet consectetur
-          adipisicing elit. Doloribus dolores illo dolore minus distinctio nobis
-          molestiae numquam architecto consectetur neque. Debitis maxime
-          doloribus reiciendis, quisquam in itaque? Est, ab alias.Quia
-          necessitatibus dolorum impedit, rerum molestias quod, porro distinctio
-          aut i psam harum aliquid nam perspiciatis pariatur, error
-          exercitationem architecto rem. Aliquid, architecto soluta rem at
-          beatae a totam cum esse
-        </p>
-      </aside>
-      <footer>
-        <section id="foot-descripcion">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-          exercitationem blanditiis nihil velit dicta, quia pariatur dignissimos
-          illo minima, veritatis itaque accusantium maxime optio architecto,
-          provident sit ex excepturi iusto?
+      </div>
+    </header>
+  </div>
+
+  <div class="contenedor-cuerpo container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <section class="seccion-principal">
+          <img src="img/fondo-header.jpg" alt="" />
         </section>
-        <section id="foot-redes">
-          <div id="Facebook">gg<a href="#"></a></div>
-          <div id="Instagram">gg<a href="#"></a></div>
-          <div id="Gmail">gg<a href="#"></a></div>
-          <div id="WhatsApp">gg<a href="#"></a></div>
-        </section>
-      </footer>
+      </div>
     </div>
-  </body>
+  </div>
+
+  <div class="contenedor-servicios container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-2">
+        <div class="servicios">
+          <a href="#">
+          <div class="icono-serv"><img class="img-serv" src="img/iconos/051-smartphone.png" alt="Movile Apps"></div>
+          <h4>Movile Apss</h4>
+          </a>
+        </div>
+        <p>Diseño, Programación y Publicación de aplicaciones moviles a medida</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+        <div class="servicios">
+          <a href="#">
+            <div class="icono-serv"><img class="img-serv" src="img/iconos/051-laptop-1.png" alt="Desarrollo Web" ></div>
+            <h4>Desarrollo Web</h4>
+            </a>
+        </div>
+        <p>Análisis, diseño y programación de software desktop / mobile 100% Outsourcing de Desarrollo</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+        <div  class="servicios">
+          <a href="#">
+            <div class="icono-serv"><img class="img-serv" src="img/iconos/051-responsive.png" alt="Responsive" ></div>
+            <h4>Responsive Design</h4>
+            </a>
+        </div>
+        <p>Diseños totalmente adaptables a cualquier tamaño de pantalla y dispositivo</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+        <div  class="servicios">
+          <a href="#">
+            <div class="icono-serv"><img class="img-serv" src="img/iconos/051-seo.png" alt="Seo"></div>
+            <h4>Posicionamiento SEO</h4>
+            </a>
+        </div>
+        <p>Aplicamos las tecnicas adecuadas para posicionar la web en los distintos buscadores</p>
+      </div>
+    </div>
+  </div>
+  <div class="contenedor-porfolio container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div id="titulo-porfolio">
+          <p>Algunos de nuestros trabajos...</p>
+        </div>
+        <div id="slaid">p</div>
+      </div>
+    </div>
+  </div>
+  <div class="contenedor-contacto container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7 col-xl-7">
+        <div class="container">
+          <div id="form-contacto">
+            <form action="#" class="was-validated">
+              <div class="form-group">
+                <label for="uname">Nombre:</label>
+                <input type="text" class="form-control" id="uname" placeholder="Ingrese el Nombre" name="uname" required>
+                <div class="valid-feedback">Correcto.</div>
+                <div class="invalid-feedback">Por favor, rellene este campo.</div>
+              </div>
+              <div class="form-group">
+                <label for="uname">Apellido:</label>
+                <input type="text" class="form-control" id="unape" placeholder="Ingrese el Apellido" name="unape" required>
+                <div class="valid-feedback">Correcto.</div>
+                <div class="invalid-feedback">Por favor, rellene este campo.</div>
+              </div>
+              <div class="form-group">
+                <label for="pwd">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese el Email" name="email" required>
+                <div class="valid-feedback">Correcto.</div>
+                <div class="invalid-feedback">Por favor, rellene este campo.</div>
+              </div>
+              <div class="form-group">
+                <label for="pwd">Telefono:</label>
+                <input type="number" class="form-control" id="telefono" placeholder="Ingrese el Telefono"
+                  name="telefono" required>
+                <div class="valid-feedback">Correcto.</div>
+                <div class="invalid-feedback">Por favor, rellene este campo.</div>
+              </div>
+              <div class="form-group form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="remember"> Pueden contactarme por WhatsApp
+                </label>
+              </div>
+              <div class="form-group">
+                <label for="pwd">Mensaje:</label>
+                <input type="text" class="form-control" id="mensaje" placeholder="Ingrese el Mensaje"
+                  name="mensaje" required>
+                <div class="valid-feedback">Correcto.</div>
+                <div class="invalid-feedback">Por favor, rellene este campo.</div>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-15">
+        <div id="desc-contacto">descripcion</div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="row">
+      <div id="foot-acercade" class="col-sm-8">
+        <h3>Acerca de</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit porro sed dolorum a beatae doloremque
+          officia voluptas! Inventore doloribus asperiores quibusdam, ad dicta nesciunt assumenda reprehenderit dolore
+          obcaecati molestiae libero.</p>
+      </div>
+      <div id="foot-redes" class="col-sm-4">
+        <h3>Seguinos en nuestras redes</h3>
+      </div>
+    </div>
+  </footer>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
