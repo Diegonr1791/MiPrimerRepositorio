@@ -183,7 +183,7 @@
                 <div class="valid-feedback">Correcto.</div>
                 <div class="invalid-feedback">* Campo Obligatorio.</div>
               </div>
-              <button type="submit" class="btn btn-primary">Enviar</button>
+              <button  id="btn-enviar"type="submit" class="btn btn-primary">Enviar</button>
             </form>
           </div>
         </div>
@@ -198,6 +198,47 @@
           <div class="tel-mail"><a href="#">(+54) 3544-637104</a></div>
           <div class="tel-mail"><a href="#">(+54) 3544-637104</a></div>
           <div class="tel-mail"><a href="#">ryukdevelopers@gmail.com</a></div>
+          <div id="jugar">
+            <div id="texto-jugar">
+              <p>Vamos a distendernos un poquito.. <br>
+                 Juguemos un juego divertido. <br>
+                 Adivina la palabra oculta!!!
+              </p>
+            </div>
+            <div id="juegojs">
+              <button id="btn-empezar" type="submit" class="btn btn-primary" onclick="mostrarTabla()">Empezar</button>
+            </div>
+            <div id="tabla-juego">
+              <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Jugador</th>
+                    <th scope="col">Intentos</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="nom-jugador">#</td>
+                    <td id="cant-intentos">#</td>
+                  </tr>
+                  <tr>
+                    <td id ="pista1" colspan="2">Pista 1: #</td>
+                  </tr>
+                  <tr>
+                    <td id ="pista2" colspan="2">Pista 2: #</td>
+                  </tr>
+                  <tr>
+                    <td id ="gano-perdio" colspan="2"></td>
+                  </tr>
+                  <tr>
+                    <td id="td-palabra" colspan="2"><p>Ingrese la Palabra:</p><input type="text" id="palabra"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <button id="btn-jugar" type="submit" class="btn btn-success" onclick="jugar()">Jugar</button>
+              <button id="btn-terminar" type="submit" class="btn btn-danger" onclick="ocultarTabla()">Terminar</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -207,7 +248,7 @@
       <div id="foot-acercade" class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
         <h4>Acerca de...</h4>
         <p>Ryuk nace como un pequeño emprendimiento de desarrollo de paginas web, para luego convertise
-          en una empresa robusta y confiable de software factory, brindado exelente calidad utilizando 
+          en una empresa robusta y confiable de software factory, brindado exelente calidad utilizando
           todos los estandares homologados.
         </p>
       </div>
@@ -220,7 +261,7 @@
       </div>
       <div id="copyright" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
         <h6>®Copyright Todos los derechos reservados a Ryuk Developers.</h6>
-       
+
       </div>
     </div>
   </footer>
@@ -235,6 +276,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="JS/adivinanza.js"></script>
 </body>
 
 </html>

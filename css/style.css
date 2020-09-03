@@ -14,6 +14,7 @@ body{
     
     
 }
+
 /*CONTENEDOR*/
 .container-fluid{
     /*background-color: blue;*/
@@ -183,7 +184,7 @@ aside{
     margin-bottom: 2vw;
     color:white;   
 }
-.contenedor-contacto .btn{
+.contenedor-contacto #btn-enviar{
     background-color: #fff;
     color:rgb(53, 51, 51);
     width: 40%;
@@ -193,7 +194,7 @@ aside{
     font-size: auto;
 
 }
-.contenedor-contacto .btn:hover{
+.contenedor-contacto #btn-enviar:hover{
     background-color: rgb(78, 130, 148);
     color:rgb(53, 51, 51);
 }
@@ -228,11 +229,57 @@ aside{
     
 }
 
+.contenedor-contacto #jugar{
+    background-color: #fff;
+    margin-top: 70px;
+    border-radius: 20px;
+    box-shadow: 0.6vw 0.3vw 0.5vw rgba(0, 0, 0, 0.2);
+    width:85%;
+    height: auto;
+    margin-bottom:20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+
+}
+.contenedor-contacto #texto-jugar{
+    padding-top: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(61, 58, 58);
+    font-size: auto;
+    font-weight: bold;
+}
+.contenedor-contacto #juegojs{
+    padding-bottom: 10px;
+}
+.contenedor-contacto #juegojs #btn-empezar{
+    font-size: auto ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
+.contenedor-contacto #tabla-juego{
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    margin-bottom: 10px;
+    display: none;
+    border-radius: 10px 10px;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+
 /*FOOTER*/
 footer{
  background-color: #282c33;
  font-family: Arial, Helvetica, sans-serif;
-color:rgb(109, 105, 105);
+ color:rgb(109, 105, 105);
+ 
     
 }
 footer #foot-acercade{
