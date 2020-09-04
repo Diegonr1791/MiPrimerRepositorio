@@ -114,12 +114,6 @@ function jugar(){
 }
 
 function reset(){
-    /*document.getElementById("btn-jugar").disabled="false";
-    document.getElementById("palabra").disabled="false";
-    intentos = 4;
-    document.getElementById("pista1").innerHTML ="Pista 1: #";
-    document.getElementById("pista2").innerHTML ="Pista 2: #";
-    document.getElementById("gano-perdio").innerHTML ="";*/
     location.reload();
     document.getElementById("btn-empezar").focus();
 

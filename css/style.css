@@ -376,7 +376,7 @@ p{
 @media(min-width: 576px) and (max-width: 767px){
     /*MENU*/
     .cont-header .menu li a{
-        font-size: 2.7vw;
+        font-size: 2.5vw;
     }
 
     /*LOGO*/
@@ -480,7 +480,7 @@ p{
 @media(min-width: 992px){
       /*MENU*/
       .cont-header .menu li a{
-        font-size: 2.5vw;
+        font-size: 2vw;
     }
 
     /*LOGO*/
