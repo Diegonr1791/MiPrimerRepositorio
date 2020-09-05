@@ -9,13 +9,13 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/style-qsomos.css">
+  <link rel="stylesheet" href="css/style-portfolio.css">
   <link rel="icon" href="img/iconos/logo-img.ico">
 
   <title>RYUK, Desarrollos web</title>
 </head>
 
-<body onload="onload('qsomos')">
+<body onload="onload('porfolio')">
   <div class="cont-header container-fluid">
     <header>
       <div class="row">
@@ -31,9 +31,9 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav text-center">
                 <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
-                <li class="nav-item"><a id="qs-activo" href="Quienes-Somos.html" class="nav-link">Quienes Somos</a></li>
+                <li class="nav-item"><a href="Quienes-Somos.html" class="nav-link">Quienes Somos</a></li>
                 <li class="nav-item"><a href="Servicios.html" class="nav-link">Servicios</a></li>
-                <li class="nav-item"><a href="Portfolio.html" class="nav-link">Porfolio</a></li>
+                <li class="nav-item"><a id="porf-activo" href="Portfolio.html" class="nav-link">Porfolio</a></li>
                 <li class="nav-item"><a href="#form-contacto" class="nav-link">Contacto</a></li>
               </ul>
             </div>
@@ -48,100 +48,99 @@
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
         <section class="seccion-principal">
           <div id="fondo-seccion">
-            <img src="img/img-qsomos.jpg" alt="Software Factory">
+            <img src="img/portfolio.jpg" alt="Porfolio">
           </div>
         </section>
       </div>
     </div>
   </div>
-  <div class=" contenedor-qsomos container-fluid">
-    <ul class=" menu-qsomos nav nav-tabs">
-      <li class="nav-item">
-        <button id="a-nacimiento" class="btn" href="#" onclick="mostrar('nacimiento')">Nacimiento</button>
-      </li>
-      <li class="nav-item">
-        <button id="a-mision" class="btn " href="#" onclick="mostrar('mision')">Mision</button>
-      </li>
-      <li class="nav-item">
-        <button id="a-vision" class="btn" href="#" onclick="mostrar('vision')">Vision</button>
-      </li>
-      <li class="nav-item">
-        <button id="a-equipo" class="btn" href="#" onclick="mostrar('equipo')">Equipo</button>
-      </li>
-      <li class="nav-item">
-        <button id="a-compromiso" class="btn" href="#" onclick="mostrar('compromiso')">Compromiso</button>
-      </li>
-    </ul>
-    <div class=" cont-texto container-fluid">
+    <div class="contenedor-portfolio container-fluid">
+      <div id="titulo-porfolio">
+        <p>Presentacion de los trabajos realizados para nuestros clientes</p>
+      </div>
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-          <div id="qsomos-logo"><img src="img/l-img.png" alt=""></div>
+        <div class=" colu col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+          <div class="card">
+            <img class="card-img-top" src="img/Portfolio/port1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Equi Nostrum</h5>
+              <p class="card-text">Tienda online de ventas de carnes saborizadas.</p>
+              <a href="#" class="btn btn-primary">Ir a la Web</a>
+            </div>
+          </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
-
-          <div id="qsomos-nacimiento">
-            <p>Por el año 2020 luego de un intensivo estudio de mercado y con la colaboracion de un grupo de amantes de
-              la tecnologia se impulsa la
-              creacion de un nuevo emprendimiento que en muy poco tiempo tuvo sus frutos.
-            </p>
-            <p>El grupo de desarrollo de Ryuk, tiene su matriz en la ciudad de Cordoba, siendo un importante
-              conglomerado de negocios dedicado al desarrollo, implementacion y comercialización de productos y
-              servicios de software destinados a satisfacer el amplio abanico de necesidades actuales del mercado.
-            </p>
+        <div class="colu col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+          <div class="card">
+            <img class="card-img-top" src="img/Portfolio/port2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
           </div>
-          <div id="qsomos-mision">
-            <p>Nuestra misión es ofrecer servicios de alta calidad, agregando valor en proyectos de Software y
-              soluciones integrales de Internet Estratégico, para Empresas y Pymes potenciando la calidad de su gestión
-              con la intención de incrementar su competitividad y resultados.
-            </p>
-            <p>
-              Buscamos entablar una relación duradera con nuestros clientes. Ya sea mediante el suministro de nuestra
-              gama de productos y servicios satisfaciendo asi sus necesidades individuales y colectivas gracias a una
-              amplia flexibilidad y a la asesoria tecnica de nuestro equipo de trabajo.
-            </p>
+        </div>
+        <div class="colu col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+          <div class="card">
+            <img class="card-img-top" src="img/Portfolio/port3.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
           </div>
-          <div id="qsomos-vision">
-            <p>
-              Convertirnos en una compañía de referencia en Argentina y Latinoamérica en la implementación de soluciones
-              de software a medida de alta calidad, gracias a la actitud de nuestros profesionales y a la experiencia
-              acumulada en estos años.
-            </p>
+        </div>
+        <div class="colu col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+          <div class="card">
+            <img class="card-img-top" src="img/Portfolio/port4.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
           </div>
-          <div id="qsomos-equipo">
-            <p>
-              Nos caracterizamos por trabajar en un clima de comunicación y retroalimentación constante, tanto a nivel
-              interno (contamos con líderes de proyecto altamente calificados que se responsabilizan en coordinar las
-              acciones de los programadores a su cargo, de la manera más productiva posible) como a nivel externo
-              (brindando asesoramiento y soporte personalizado a nuestros clientes, respondiendo a todas sus
-              inquietudes).
-            </p>
+        </div>
+        <div class="colu col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+          <div class="card">
+            <img class="card-img-top" src="img/Portfolio/port5.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
           </div>
-          <div id="qsomos-compromiso">
-            <p>
-              En Ryuk, nos comprometemos intensamente en lograr la satisfacción completa de las necesidades de nuestros
-              clientes. Para ello, ponemos a disposición del contratante un equipo integrado por nuestros mejores
-              desarrolladores, formados y especializados en el manejo de los lenguajes más demandados en el mercado y
-              con
-              una amplia experiencia en Desarrollo, Tecnologías de la Información (IT) y Negocios.
-            </p>
+        </div>
+        <div class="colu col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+          <div class="card">
+            <img class="card-img-top" src="img/Portfolio/port6.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
           </div>
-
+        </div>
+        <div class="colu col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+          <div class="card">
+            <img class="card-img-top" src="img/Portfolio/port7.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="colu col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+          <div class="card">
+            <img class="card-img-top" src="img/Portfolio/port8.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="cont-motivacional container-fluid">
-    <div id="texto-motivacion">
-      <p>“Si tus acciones inspiran a otros a soñar más, aprender más, hacer más y ser mejores, eres un líder.”</p>
-      <p id="autor">JACK WELCH JR.</p>
-    </div>
-    <div id="video-motivacion">
-
-      <iframe width="560" height="415" src="https://www.youtube.com/embed/e6ZHqzM5SHE" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-    </div>
-  </div>
   <div class="contenedor-contacto container-fluid">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7 col-xl-7">
