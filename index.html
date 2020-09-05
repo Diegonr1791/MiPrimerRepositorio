@@ -9,11 +9,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/iconos/logo-img.ico">
 
   <title>RYUK, Desarrollos web</title>
 </head>
 
-<body>
+<body onload="onload('index')">
   <div class="cont-header container-fluid">
     <header>
       <div class="row">
@@ -28,7 +29,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav text-center">
-                <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a id="index-activo" href="index.html" class="nav-link">Inicio</a></li>
                 <li class="nav-item"><a href="Quienes-Somos.html" class="nav-link">Quienes Somos</a></li>
                 <li class="nav-item"><a href="Servicios.html" class="nav-link">Servicios</a></li>
                 <li class="nav-item"><a href="Porfolio.html" class="nav-link">Porfolio</a></li>
@@ -276,7 +277,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-
+  
+  <script type="text/javascript" src="JS/functions-generals.js"></script>
   <script type="text/javascript" src="JS/adivinanza.js"></script>
 </body>
 

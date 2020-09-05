@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+/*header*/
+.seccion-principal #fondo-seccion img{
+    width: 100%;
+    height: 50% !important;
+}
+.contenedor-qsomos {
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(230, 219, 219);
+}
+/*BARRA NAVEGACION QSOMOS*/
+.contenedor-qsomos .menu-qsomos{
+    margin-top: 40px;
+    border-bottom: 1px solid rgb(230, 219, 219);
+}
+.contenedor-qsomos .btn{
+    font-size: 1.7vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(97, 93, 93);
+    margin-left: 5px;
+    box-shadow: none !important;
+    
+}
+.contenedor-qsomos .btn:hover{
+    color:rgb(66, 64, 64);
+    border-bottom: 2px solid rgb(66, 64, 64);
+  
+}
+
+.contenedor-qsomos .cont-texto{
+    margin-top: 20px;
+}
+
+
+
+/*DIVLOGO*/
+#qsomos-logo{
+    
+}
+
+#qsomos-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*NACIMIENTO*/
+#qsomos-nacimiento{
+    float: left;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+/*Mision*/
+#qsomos-mision{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+/*Vision*/
+#qsomos-vision{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+/*Equipo*/
+#qsomos-equipo{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+/*Compromiso*/
+
+#qsomos-compromiso{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.cont-texto p{
+    margin-top: 10px;
+    font-size:auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(97, 93, 93);
+    line-height: 30px;
+}
+/*--------------------------------------------------*/
+/*CONTENEDOR MOTIVACIONAL*/
+.cont-motivacional #texto-motivacion{
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(235, 235, 235);
+}
+
+.cont-motivacional #texto-motivacion p{
+    margin-top: 10px;
+    font-size:40px;
+    font-family: 'Indie Flower', cursive;
+    color:rgb(97, 93, 93);
+    line-height: 30px;
+}
+.cont-motivacional #texto-motivacion #autor{
+    padding-top: 20px;
+    font-size: 30px;
+    text-align: right;
+}
+
+.cont-motivacional #video-motivacion{
+    padding-top: 30px;
+    height: 0;
+    text-align: center;
+    padding-bottom: 56.25%;
+    position: relative;
+
+}
+.cont-motivacional #video-motivacion iframe{
+    height: 100%;
+    left:0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+
+
+
+
+/*MEDIA QUERIES PARA RESPONSIVE*/
+/*resolucion para movil*/
+@media(max-width: 575px){
+    .cont-texto #qsomos-logo{
+        display: none;
+    }
+    .contenedor-qsomos .btn{
+        font-size: 2.7vw;
+        
+    }
+    .cont-texto{
+        width: 100%;
+        height: 100%;
+    }
+
+    #qsomos-vision, #qsomos-mision, #qsomos-equipo, #qsomos-compromiso{
+        position: relative;
+    }
+
+   
+}
+
+/*resolucion para tablet*/
+@media(min-width: 576px) and (max-width: 767px){
+    .cont-texto #qsomos-logo{
+        display: none;
+    }
+    .contenedor-qsomos .btn{
+        font-size: 2.2vw;
+        
+    }
+    .cont-texto{
+        width: 100%;
+        height: 100%;
+    }
+
+    #qsomos-vision, #qsomos-mision, #qsomos-equipo, #qsomos-compromiso{
+        position: relative;
+    }
+
+}
+
+/*resolucion para notebook*/
+@media(min-width: 768px) and (max-width: 991px){
+  
+.contenedor-qsomos .btn{
+    font-size: 2vw;
+    
+}
+#qsomos-vision, #qsomos-mision, #qsomos-equipo, #qsomos-compromiso{
+    position: relative;
+}
+ 
+ 
+    
+}
+
+/*resolucion para pantalla grande*/
+@media(min-width: 992px){
+
+
+}

@@ -9,27 +9,29 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style-qsomos.css">
+  <link rel="icon" href="img/iconos/logo-img.ico">
 
   <title>RYUK, Desarrollos web</title>
 </head>
 
-<body>
-  <div class=" cont-header container-fluid">
+<body onload="onload('qsomos')">
+  <div class="cont-header container-fluid">
     <header>
       <div class="row">
         <div class="col-12-xs col-sm-4 col-md-4 col-lg-4 col-xl-4">
-          <nav class=" menu navbar navbar-expand-sm navbar-light fixed-top">
+          <nav class="menu navbar fixed-top navbar-expand-sm  navbar-light">
             <div id="logo">
               <a href="index.html">RYUK</a>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-              aria-expanded="false" aria-label="Toggle navigation" aria-controls="navbarNav">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+              data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation" aria-controls="navbarNav">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
+              <ul class="navbar-nav text-center">
                 <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
-                <li class="nav-item"><a href="Quienes-Somos.html" class="nav-link">Quienes Somos</a></li>
+                <li class="nav-item"><a id="qs-activo" href="Quienes-Somos.html" class="nav-link">Quienes Somos</a></li>
                 <li class="nav-item"><a href="Servicios.html" class="nav-link">Servicios</a></li>
                 <li class="nav-item"><a href="Porfolio.html" class="nav-link">Porfolio</a></li>
                 <li class="nav-item"><a href="#form-contacto" class="nav-link">Contacto</a></li>
@@ -41,53 +43,103 @@
     </header>
   </div>
 
-  <div class="contenedor-cuerpo container-fluid">
-    <div class="row">
-      <div class="col-sm-8">
-        <section class="seccion-principal">
-          <img src="img/fondo-header.jpg" alt="" />
-        </section>
-      </div>
-      <div class="col-sm-4">
-        <aside>
-          <div id="img"></div>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione ex, in quos illum nulla nisi labore atque
-            dolorem iure accusamus voluptatum similique laborum dolorum, vel incidunt voluptatem nemo expedita
-            excepturi.
-          </p>
-        </aside>
-      </div>
-    </div>
-  </div>
-
-  <div class="contenedor-servicios container-fluid">
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-2">
-        <div id="movile" class="servicios"></div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim deserunt,</p>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-        <div id="soft" class="servicios"></div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim deserunt,</p>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-        <div id="responsive" class="servicios"></div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim deserunt,</p>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-        <div id="movile" class="servicios"></div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim deserunt,</p>
-      </div>
-    </div>
-  </div>
-  <div class="contenedor-porfolio container-fluid">
+  <div class="contenedor-cuerpo">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-        <div id="titulo-porfolio">
-          <p>Algunos de nuestros trabajos...</p>
-        </div>
-        <div id="slaid">p</div>
+        <section class="seccion-principal">
+          <div id="fondo-seccion">
+            <img src="img/img-qsomos.jpg" alt="Software Factory">
+          </div>
+        </section>
       </div>
+    </div>
+  </div>
+  <div class=" contenedor-qsomos container-fluid">
+    <ul class=" menu-qsomos nav nav-tabs">
+      <li class="nav-item">
+        <button id="a-nacimiento" class="btn" href="#" onclick="mostrar('nacimiento')">Nacimiento</button>
+      </li>
+      <li class="nav-item">
+        <button id="a-mision" class="btn " href="#" onclick="mostrar('mision')">Mision</button>
+      </li>
+      <li class="nav-item">
+        <button id="a-vision" class="btn" href="#" onclick="mostrar('vision')">Vision</button>
+      </li>
+      <li class="nav-item">
+        <button id="a-equipo" class="btn" href="#" onclick="mostrar('equipo')">Equipo</button>
+      </li>
+      <li class="nav-item">
+        <button id="a-compromiso" class="btn" href="#" onclick="mostrar('compromiso')">Compromiso</button>
+      </li>
+    </ul>
+    <div class=" cont-texto container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+          <div id="qsomos-logo"><img src="img/l-img.png" alt=""></div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+
+          <div id="qsomos-nacimiento">
+            <p>Por el año 2020 luego de un intensivo estudio de mercado y con la colaboracion de un grupo de amantes de
+              la tecnologia se impulsa la
+              creacion de un nuevo emprendimiento que en muy poco tiempo tuvo sus frutos.
+            </p>
+            <p>El grupo de desarrollo de Ryuk, tiene su matriz en la ciudad de Cordoba, siendo un importante
+              conglomerado de negocios dedicado al desarrollo, implementacion y comercialización de productos y
+              servicios de software destinados a satisfacer el amplio abanico de necesidades actuales del mercado.
+            </p>
+          </div>
+          <div id="qsomos-mision">
+            <p>Nuestra misión es ofrecer servicios de alta calidad, agregando valor en proyectos de Software y
+              soluciones integrales de Internet Estratégico, para Empresas y Pymes potenciando la calidad de su gestión
+              con la intención de incrementar su competitividad y resultados.
+            </p>
+            <p>
+              Buscamos entablar una relación duradera con nuestros clientes. Ya sea mediante el suministro de nuestra
+              gama de productos y servicios satisfaciendo asi sus necesidades individuales y colectivas gracias a una
+              amplia flexibilidad y a la asesoria tecnica de nuestro equipo de trabajo.
+            </p>
+          </div>
+          <div id="qsomos-vision">
+            <p>
+              Convertirnos en una compañía de referencia en Argentina y Latinoamérica en la implementación de soluciones
+              de software a medida de alta calidad, gracias a la actitud de nuestros profesionales y a la experiencia
+              acumulada en estos años.
+            </p>
+          </div>
+          <div id="qsomos-equipo">
+            <p>
+              Nos caracterizamos por trabajar en un clima de comunicación y retroalimentación constante, tanto a nivel
+              interno (contamos con líderes de proyecto altamente calificados que se responsabilizan en coordinar las
+              acciones de los programadores a su cargo, de la manera más productiva posible) como a nivel externo
+              (brindando asesoramiento y soporte personalizado a nuestros clientes, respondiendo a todas sus
+              inquietudes).
+            </p>
+          </div>
+          <div id="qsomos-compromiso">
+            <p>
+              En Ryuk, nos comprometemos intensamente en lograr la satisfacción completa de las necesidades de nuestros
+              clientes. Para ello, ponemos a disposición del contratante un equipo integrado por nuestros mejores
+              desarrolladores, formados y especializados en el manejo de los lenguajes más demandados en el mercado y
+              con
+              una amplia experiencia en Desarrollo, Tecnologías de la Información (IT) y Negocios.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cont-motivacional container-fluid">
+    <div id="texto-motivacion">
+      <p>“Si tus acciones inspiran a otros a soñar más, aprender más, hacer más y ser mejores, eres un líder.”</p>
+      <p id="autor">JACK WELCH JR.</p>
+    </div>
+    <div id="video-motivacion">
+
+      <iframe width="560" height="415" src="https://www.youtube.com/embed/e6ZHqzM5SHE" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
     </div>
   </div>
   <div class="contenedor-contacto container-fluid">
@@ -98,64 +150,87 @@
             <form action="#" class="was-validated">
               <div class="form-group">
                 <label for="uname">Nombre:</label>
-                <input type="text" class="form-control" id="uname" placeholder="Ingrese el Nombre" name="uname" required>
+                <input type="text" class="form-control" id="uname" placeholder="Ingrese el Nombre" name="uname"
+                  required>
                 <div class="valid-feedback">Correcto.</div>
-                <div class="invalid-feedback">Por favor, rellene este campo.</div>
+                <div class="invalid-feedback">* Campo Obligatorio.</div>
               </div>
               <div class="form-group">
-                <label for="uname">Apellido:</label>
-                <input type="text" class="form-control" id="unape" placeholder="Ingrese el Apellido" name="unape" required>
+                <label for="unape">Apellido:</label>
+                <input type="text" class="form-control" id="unape" placeholder="Ingrese el Apellido" name="unape"
+                  required>
                 <div class="valid-feedback">Correcto.</div>
-                <div class="invalid-feedback">Por favor, rellene este campo.</div>
+                <div class="invalid-feedback">* Campo Obligatorio.</div>
               </div>
               <div class="form-group">
-                <label for="pwd">Email:</label>
-                <input type="email" class="form-control" id="email" placeholder="Ingrese el Email" name="email" required>
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese el Email" name="email"
+                  required>
                 <div class="valid-feedback">Correcto.</div>
-                <div class="invalid-feedback">Por favor, rellene este campo.</div>
+                <div class="invalid-feedback">* Campo Obligatorio.</div>
               </div>
               <div class="form-group">
-                <label for="pwd">Mensaje:</label>
-                <input type="text" class="form-control" id="descripcion" placeholder="Ingrese el Mensaje"
-                  name="descripcion" required>
+                <label for="telefono">Telefono:</label>
+                <input type="number" class="form-control" id="telefono" placeholder="Ingrese el Telefono"
+                  name="telefono" required>
                 <div class="valid-feedback">Correcto.</div>
-                <div class="invalid-feedback">Por favor, rellene este campo.</div>
+                <div class="invalid-feedback">* Campo Obligatorio.</div>
               </div>
               <div class="form-group form-check">
                 <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox" name="remember" required> Acepto los terminos y
-                  condiciones.
-                  <div class="valid-feedback">Correcto.</div>
-                  <div class="invalid-feedback">Check this checkbox to continue.</div>
+                  <input class="form-check-input" type="checkbox" name="remember"> Pueden contactarme por WhatsApp
                 </label>
               </div>
-              <button type="submit" class="btn btn-primary">Enviar</button>
+              <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea class="form-control" id="mensaje" placeholder="Ingrese el Mensaje" name="mensaje"
+                  required></textarea>
+                <div class="valid-feedback">Correcto.</div>
+                <div class="invalid-feedback">* Campo Obligatorio.</div>
+              </div>
+              <button id="btn-enviar" type="submit" class="btn btn-primary">Enviar</button>
             </form>
           </div>
         </div>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-15">
-        <div id="desc-contacto">descripcion</div>
+        <div id="desc-contacto">
+          <div id="info-contacto">
+            <h3>Envíe su consulta o llámenos de lunes a viernes de 9 a 18 hs.</h3>
+            <p>Ciudad de Cordoba-Argentina</p>
+          </div>
+          <div class="tel-mail"><a href="#">(+54) 3544-637104</a></div>
+          <div class="tel-mail"><a href="#">(+54) 3544-637104</a></div>
+          <div class="tel-mail"><a href="#">(+54) 3544-637104</a></div>
+          <div class="tel-mail"><a href="#">ryukdevelopers@gmail.com</a></div>
+        </div>
       </div>
     </div>
   </div>
   <footer>
     <div class="row">
-      <div id="foot-acercade" class="col-sm-8">
-        <h3>Acerca de</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit porro sed dolorum a beatae doloremque
-          officia voluptas! Inventore doloribus asperiores quibusdam, ad dicta nesciunt assumenda reprehenderit dolore
-          obcaecati molestiae libero.</p>
+      <div id="foot-acercade" class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+        <h4>Acerca de...</h4>
+        <p>Ryuk nace como un pequeño emprendimiento de desarrollo de paginas web, para luego convertise
+          en una empresa robusta y confiable de software factory, brindado exelente calidad utilizando
+          todos los estandares homologados.
+        </p>
       </div>
-      <div id="foot-redes" class="col-sm-4">
-        <h3>Seguinos en nuestras redes</h3>
+      <div id="foot-redes" class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+        <h4>Seguinos en nuestras redes</h4>
+        <a href="#"><img src="img/iconos/034-instagram.png" alt=""></a>
+        <a href="#"><img src="img/iconos/045-facebook.png" alt=""></a>
+        <a href="#"><img src="img/iconos/035-google-plus.png" alt=""></a>
+        <a href="#"><img src="img/iconos/031-linkedin.png" alt=""></a>
+      </div>
+      <div id="copyright" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <h6>®Copyright Todos los derechos reservados a Ryuk Developers.</h6>
+
       </div>
     </div>
   </footer>
   </div>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -165,6 +240,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="JS/functions-generals.js"></script>
+  <script type="text/javascript" src="JS/efectos-qsomos.js"></script>
+
 </body>
 
 </html>
