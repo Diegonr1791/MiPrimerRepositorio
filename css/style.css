@@ -450,7 +450,7 @@ p{
     .seccion-principal #leyenda-seccion{
         position: absolute;
         width: 100%;
-        height: 30px;
+        height: 40px;
         bottom: 5px;
         right: auto;
         left: 40px;
@@ -496,6 +496,18 @@ p{
     /*LOGO*/
     #logo{
         font-size: 5vw;       
+    }
+      /*SECCION CUERPO*/
+      .seccion-principal #leyenda-seccion{
+        position: absolute;
+        width: 100%;
+        height: 40px;
+        bottom: 25px;
+        right: auto;
+        left: 40px;
+        font-family: 'Indie Flower', cursive;
+        font-size:3.32vw;
+        color:rgb(236, 231, 231);
     }
 
     /*SERVICIOS*/
